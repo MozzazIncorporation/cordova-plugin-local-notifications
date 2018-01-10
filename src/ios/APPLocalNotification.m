@@ -536,6 +536,8 @@
 
     completionHandler();
     
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"AppNotificationAction" object:nil userInfo:userInfo]
+
     if ([toast.trigger isKindOfClass:UNPushNotificationTrigger.class])
         return;
 
