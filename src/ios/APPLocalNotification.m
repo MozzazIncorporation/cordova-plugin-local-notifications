@@ -1,4 +1,7 @@
 /*
+ * Modified by Mozzaz Inc.
+ * Original author Sebastian Katzer
+ *
  * Apache 2.0 License
  *
  * Copyright (c) Sebastian Katzer 2017
