@@ -597,6 +597,8 @@
 {
     NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
 
+    isActive = YES;
+
     [center addObserverForName:UIApplicationDidBecomeActiveNotification
                         object:NULL queue:[NSOperationQueue mainQueue]
                     usingBlock:^(NSNotification *e) { isActive = YES; }];
