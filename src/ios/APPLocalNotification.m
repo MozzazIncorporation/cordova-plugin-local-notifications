@@ -509,6 +509,8 @@
 {
     UNNotificationRequest* toast = notification.request;
 
+    NSDictionary* userInfo = @{@"notification": (notification)};
+    
     if ([toast.trigger isKindOfClass:UNPushNotificationTrigger.class])
         return;
     
@@ -525,6 +527,8 @@
     } else {
         completionHandler(UNNotificationPresentationOptionBadge|UNNotificationPresentationOptionSound);
     }
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"AppPresentNotification" object:nil userInfo:userInfo];
 }
 
 /**
