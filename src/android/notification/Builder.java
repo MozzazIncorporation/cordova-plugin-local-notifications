@@ -394,7 +394,7 @@ public final class Builder {
         int reqCode = random.nextInt();
 
         return PendingIntent.getActivity(
-                context, reqCode, intent, FLAG_CANCEL_CURRENT);
+                context, reqCode, intent, FLAG_UPDATE_CURRENT);
     }
 
     /**
