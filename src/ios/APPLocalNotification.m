@@ -707,7 +707,7 @@
     }
 
     js = [NSString stringWithFormat:
-          @"cordova.plugins.notification.local.core.fireEvent('%@', %@)",
+          @"cordova.plugins.notification.local.fireEvent('%@', %@)",
           event, params];
 
     if (deviceready) {
